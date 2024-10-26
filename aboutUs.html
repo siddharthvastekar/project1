@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Holmes' Homes</title>
+    <link rel="stylesheet" type="text/css" href="HomepageStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="css/styles.css" type="text/css" rel="Stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">Holmes Homes</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./properties.html">Properties</a></li>
+                        <li><a href="./agents.hmtl">Agents</a></li>
+                        <li><a href="./aboutUs.html" class="active">About us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li><a href="./login.html">login</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section id="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <h3>We put the real in real estate</h3>
+            <p class="large-paragraph">Established in xxxx, we have a lot of experience when it comes to the business of real estate. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare aenean euismod elementum nisi quis. Eget dolor morbi non arcu risus quis. Volutpat consequat mauris nunc congue. Fermentum dui faucibus in ornare quam viverra. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Elit eget gravida cum sociis. Nunc faucibus a pellentesque sit. Sit amet facilisis magna etiam tempor orci. </p>
+            <p>Id eu nisl nunc mi ipsum faucibus. Mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing. Massa sapien faucibus et molestie ac feugiat. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Parturient montes nascetur ridiculus mus mauris vitae. Enim sed faucibus turpis in eu mi bibendum neque egestas. Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Cursus turpis massa tincidunt dui.</p>
+            <img class="centered-image" src="./pics/aboutPage.jpg">
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About Holmes' Homes</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="./properties.html">Properties</a></li>
+                    <li><a href="./agents">Agents</a></li>
+                    <li><a href="./aboutUs.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./login.html">login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h5>Subscribe to our Newsletter</h5>
+                <div id="subscribe-container">
+                    <input type="text" placeholder="Enter Email" />
+                    <button class="right-rounded">Send</button>
+                </div>
+
+                <h5 class="follow-us">Follow Us</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
+
+           navToggle.on('click', () => {
+               navMenu.css('right', '0');
+           });
+
+           $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+           });
+
+           $(document).on('click', (e) => {
+                let target = $(e.target);
+                if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                navMenu.css('right', '-100%');
+                }
+            });
+        });
+</script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Holmes' Homes</title>
+    
+    <link rel="stylesheet" type="text/db" href="db.sql"/>
+    <link rel="stylesheet" type="text/css" href="HomepageStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="css/HomepageStyles.css" type="text/css" rel="Stylesheet" />
+   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+   
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">Holmes' Homes</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                       
+                      
+                        <li><a href="./properties.html">Properties</a></li>
+                        <li><a href="./agents.html">Agents</a></li>
+                        <li><a href="./aboutUs.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                       
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="hero">
+            <div class="fade"></div>
+            <div id="hero-slider" class="slick">
+                <div>
+                    <img src="./pics/property9.jpg" alt="Property 1" />
+                </div>
+               
+                <div class="hero-text">
+                    <h1>Could this be your future home?</h1>
+                </div>
+            </section>
+        </div>
+      
+                        
+        <section id="agents">
+            <div class="container">
+                <div class="flex">
+                    <div class="card">
+                        <img src="./pics/person2.jpg" alt="Realtor 1" />
+                        <h3>Kaiara Spencer</h3>
+                        <p>Real Estate Agent</p>
+                        <br>
+                    <div class="property-details">
+                        <a href="property 1" class="button">3,400,000</a><br>
+                       
+                        <span class="beds">6 beds</span><br>
+                    
+                        <span class="baths">4 baths</span><br>
+                    
+                        <span class="sqft">4,250 sqft.</span><br>
+                        <address>
+                            480 12th, vadodara,gujarat
+                        </address>
+                    </div>
+                    <br>
+                    /div>
+</div>
+</section>
+            
+                     
+    
+  
+                 
+              
+            <div class="Description">
+                <h2>Property Description</h2>
+                <h3>We put the real in real estate</h3>
+                <p class="large-paragraph">Below are some of the properties we offer <a class="internal-link" href="contact.html">contact us</a> for a full list.</p>
+                <p>
+                    This item is connected to a text field in your content collection. Double click what you want to edit and then select "Change Content" to add your own content to the collection. Want to view and manage all your collections? Click the Content Manager icon on the add panel to your left. In the Content Manager, you can update items, add new fields, create dynamic pages and more. </p>
+            </div>
+        </section><style>#description{
+            border-top-right-radius: 10%;
+            font font-weight: 600;} </style>
+    </div>
+                </div></div></section>
+    
+               
+            </body></html>
+                
